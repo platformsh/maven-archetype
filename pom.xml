@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+   <modelVersion>4.0.0</modelVersion>
+
+   <groupId>sh.platform.archetype</groupId>
+   <artifactId>parent</artifactId>
+   <version>0.0.1</version>
+   <packaging>pom</packaging>
+
+   <name>${project.groupId}:${project.artifactId}</name>
+   <description>Platform.sh Archetypes</description>
+   <url>https://platform.sh/</url>
+
+   <licenses>
+    <license>
+        <name>The Apache Software License, Version 2.0</name>
+        <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+</licenses>
+
+
+<scm>
+    <connection>scm:git:git://github.com/platformsh/maven-archetype.git</connection>
+    <developerConnection>scm:git:ssh://github.com:platformsh/maven-archetype.git</developerConnection>
+    <url>https://github.com/platformsh/maven-archetype</url>
+</scm>
+
+<developers>
+    <developer>
+        <name>Platform.sh Developers</name>
+        <email>otavio.santana@platform.sh</email>
+        <organization>Platform.sh Developers</organization>
+        <organizationUrl>https://platform.sh/</organizationUrl>
+    </developer>
+</developers>
+
+<modules>
+    <module>payara</module>
+</modules>
+
+<distributionManagement>
+    <snapshotRepository>
+        <id>ossrh</id>
+        <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+    </snapshotRepository>
+    <repository>
+        <id>ossrh</id>
+        <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+</distributionManagement>
+</project>
